@@ -8,7 +8,7 @@ showSlides(slideIndex);
 function plusSlide() {
     showSlides(slideIndex += 1);
 }
-
+let timerId = setInterval(() => plusSlide(), 3000);
 /* Функция уменьшяет индекс на 1, показывает предыдущий слайд*/
 function minusSlide() {
     showSlides(slideIndex -= 1);  
