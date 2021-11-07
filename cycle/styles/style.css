@@ -320,7 +320,8 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #FAEBD7; }
+  background-color: #FAEBD7;
+  overflow: hidden; }
   .mainContainer main .fourthBlock .fourthBlock__item {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
