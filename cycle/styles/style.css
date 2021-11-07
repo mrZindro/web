@@ -181,7 +181,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #F5F5F5; }
+  background: url(../images/wood.jpg) center/cover no-repeat #F5F5F5; }
   .mainContainer main .secondBlock .secondBlock__item figure {
     font-size: 20px;
     text-align: center; }
@@ -225,7 +225,7 @@ body {
         height: 50vw; } }
 .mainContainer main .thirdBlock {
   height: 150vh;
-  background-color: gray;
+  background-color: #B39F7A;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -322,15 +322,15 @@ body {
         height: 20px;
         width: 20px;
         margin: 0.8em 0.2em 0 0.2em;
-        background-color: #FF9966;
+        background-color: #91A3B0;
         border-radius: 50%;
         display: inline-block;
         -webkit-transition: background-color 0.6s ease;
         transition: background-color 0.6s ease; }
         .mainContainer main .thirdBlock .gallery .gallery__dots .gallery__dots--item.active {
-          background-color: #FFE4C4; }
+          background-color: #5F9EA0; }
         .mainContainer main .thirdBlock .gallery .gallery__dots .gallery__dots--item:hover {
-          background-color: #FBCEB1; }
+          background-color: #536872; }
 .mainContainer main .fourthBlock {
   height: 80vh;
   display: -webkit-box;
