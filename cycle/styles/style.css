@@ -292,11 +292,11 @@ body {
              object-fit: cover;
           width: 70vw;
           height: 80vh; }
-    @media screen and (max-width: 762px) {
-      .mainContainer main .thirdBlock .gallery {
-        width: 90vw; }
-        .mainContainer main .thirdBlock .gallery li img {
-          width: 90vw; } }
+      @media screen and (max-width: 762px) {
+        .mainContainer main .thirdBlock .gallery .gallery__slider {
+          width: 95vw; }
+          .mainContainer main .thirdBlock .gallery .gallery__slider li img {
+            width: 95vw; } }
     .mainContainer main .thirdBlock .gallery .gallery__arrow--left, .mainContainer main .thirdBlock .gallery .gallery__arrow--right {
       position: absolute;
       top: 50%;
