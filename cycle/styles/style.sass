@@ -11,6 +11,7 @@
 // @media screen and ( max-width:  )
     
 body
+    font-family: 'Roboto', sans-serif
 .mainWrapper
 
 .headerContainer
@@ -68,6 +69,7 @@ body
                     opacity: 1
                     transform: translate(0, 0)
     @media screen and ( max-width: 762px )
+        background: url(../images/main.jpg) pink bottom/cover no-repeat
         header
             .header__main
                 h2
@@ -92,12 +94,28 @@ body
                 transition: all 0.8s ease-in
                 opacity: 0
                 transform: translate(-10%, 0)
+                position: relative
                 &.active
                     opacity: 1
                     transform: translate(0, 0)
+                &::before
+                    content: ''
+                    position: absolute
+                    width: 40px
+                    height: 40px
+                    background: url(../images/item.png) top/contain no-repeat
+                    left: -50px
+                    top: -3px
+                    
             @media screen and ( max-width: 762px )
                 height: 100vh
                 font-size: 15px
+                p
+                    &::before
+                        width: 20px
+                        height: 20px
+                        left: -25px
+                        top: 0
         .secondBlock
             height: 70vh
             display: flex

@@ -68,6 +68,9 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0.4; }
   to {
     opacity: 1; } }
+body {
+  font-family: "Roboto", sans-serif; }
+
 .headerContainer {
   background: url(../images/main.jpg) pink bottom/cover no-repeat fixed;
   width: 100%;
@@ -104,10 +107,12 @@ h1, h2, h3, h4, h5, h6 {
         -webkit-transform: translate(0, 0);
                 transform: translate(0, 0); }
   @media screen and (max-width: 762px) {
-    .headerContainer header .header__main h2 {
-      font-size: 30px; }
-    .headerContainer header .header__main p {
-      font-size: 15px; } }
+    .headerContainer {
+      background: url(../images/main.jpg) pink bottom/cover no-repeat; }
+      .headerContainer header .header__main h2 {
+        font-size: 30px; }
+      .headerContainer header .header__main p {
+        font-size: 15px; } }
 
 .mainContainer main .firstBlock {
   height: 70vh;
@@ -133,15 +138,29 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 0.8s ease-in;
     opacity: 0;
     -webkit-transform: translate(-10%, 0);
-            transform: translate(-10%, 0); }
+            transform: translate(-10%, 0);
+    position: relative; }
     .mainContainer main .firstBlock p.active {
       opacity: 1;
       -webkit-transform: translate(0, 0);
               transform: translate(0, 0); }
+    .mainContainer main .firstBlock p::before {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background: url(../images/item.png) top/contain no-repeat;
+      left: -50px;
+      top: -3px; }
   @media screen and (max-width: 762px) {
     .mainContainer main .firstBlock {
       height: 100vh;
-      font-size: 15px; } }
+      font-size: 15px; }
+      .mainContainer main .firstBlock p::before {
+        width: 20px;
+        height: 20px;
+        left: -25px;
+        top: 0; } }
 .mainContainer main .secondBlock {
   height: 70vh;
   display: -webkit-box;
