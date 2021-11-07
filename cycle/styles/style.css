@@ -112,6 +112,11 @@ body {
           opacity: 1;
           -webkit-transform: translate(0, 0);
                   transform: translate(0, 0); }
+  @media screen and (max-width: 992px) {
+    .headerContainer header .header__main h2 {
+      font-size: 40px; }
+    .headerContainer header .header__main p {
+      font-size: 20px; } }
   @media screen and (max-width: 762px) {
     .headerContainer {
       background: url(../images/main.jpg) pink bottom/cover no-repeat; }
@@ -157,6 +162,9 @@ body {
       background: url(../images/item.png) top/contain no-repeat;
       left: -50px;
       top: -3px; }
+  @media screen and (max-width: 992px) {
+    .mainContainer main .firstBlock {
+      min-height: 800px; } }
   @media screen and (max-width: 762px) {
     .mainContainer main .firstBlock {
       min-height: 500px;
