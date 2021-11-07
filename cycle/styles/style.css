@@ -69,43 +69,49 @@ h1, h2, h3, h4, h5, h6 {
   to {
     opacity: 1; } }
 body {
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  margin: 100vh 0 0 0; }
 
 .headerContainer {
-  background: url(../images/main.jpg) pink bottom/cover no-repeat fixed;
-  width: 100%;
-  height: 100vh; }
-  .headerContainer header .header__main {
-    text-align: left;
-    width: 80vw;
-    margin: 0 auto;
-    padding: 40vh 0 0 0;
-    color: #fff; }
-    .headerContainer header .header__main h2 {
-      font: 70px "Roboto", sans-serif;
-      margin: 0 0 1.5em 0;
-      text-shadow: 2px 2px 10px black;
-      -webkit-transition: all 0.4s ease-in;
-      transition: all 0.4s ease-in;
-      opacity: 0;
-      -webkit-transform: translate(0, 120%);
-              transform: translate(0, 120%); }
-      .headerContainer header .header__main h2.active {
-        opacity: 1;
-        -webkit-transform: translate(0, 0);
-                transform: translate(0, 0); }
-    .headerContainer header .header__main p {
-      font: 30px "Roboto", sans-serif;
-      text-shadow: 2px 2px 10px black;
-      -webkit-transition: all 0.4s ease-in;
-      transition: all 0.4s ease-in;
-      opacity: 0;
-      -webkit-transform: translate(0, 120%);
-              transform: translate(0, 120%); }
-      .headerContainer header .header__main p.active {
-        opacity: 1;
-        -webkit-transform: translate(0, 0);
-                transform: translate(0, 0); }
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1; }
+  .headerContainer header {
+    background: url(../images/main.jpg) pink bottom/cover no-repeat;
+    width: 100vw;
+    height: 100vh; }
+    .headerContainer header .header__main {
+      text-align: left;
+      width: 80vw;
+      margin: 0 auto;
+      padding: 40vh 0 0 0;
+      color: #fff; }
+      .headerContainer header .header__main h2 {
+        font: 70px "Roboto", sans-serif;
+        margin: 0 0 1.5em 0;
+        text-shadow: 2px 2px 10px black;
+        -webkit-transition: all 0.4s ease-in;
+        transition: all 0.4s ease-in;
+        opacity: 0;
+        -webkit-transform: translate(0, 120%);
+                transform: translate(0, 120%); }
+        .headerContainer header .header__main h2.active {
+          opacity: 1;
+          -webkit-transform: translate(0, 0);
+                  transform: translate(0, 0); }
+      .headerContainer header .header__main p {
+        font: 30px "Roboto", sans-serif;
+        text-shadow: 2px 2px 10px black;
+        -webkit-transition: all 0.4s ease-in;
+        transition: all 0.4s ease-in;
+        opacity: 0;
+        -webkit-transform: translate(0, 120%);
+                transform: translate(0, 120%); }
+        .headerContainer header .header__main p.active {
+          opacity: 1;
+          -webkit-transform: translate(0, 0);
+                  transform: translate(0, 0); }
   @media screen and (max-width: 762px) {
     .headerContainer {
       background: url(../images/main.jpg) pink bottom/cover no-repeat; }
@@ -124,9 +130,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: nowrap column;
           flex-flow: nowrap column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -154,6 +159,7 @@ body {
       top: -3px; }
   @media screen and (max-width: 762px) {
     .mainContainer main .firstBlock {
+      min-height: 500px;
       height: 100vh;
       font-size: 15px; }
       .mainContainer main .firstBlock p::before {
@@ -174,7 +180,8 @@ body {
       justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  background-color: #F5F5F5; }
   .mainContainer main .secondBlock .secondBlock__item figure {
     font-size: 20px;
     text-align: center; }
@@ -208,7 +215,7 @@ body {
                 transform: translate(0, 0); }
   @media screen and (max-width: 762px) {
     .mainContainer main .secondBlock {
-      height: 150vh;
+      height: 240vw;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-flow: nowrap column;
@@ -398,7 +405,8 @@ body {
           flex-flow: nowrap column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  background-color: #F5F5F5; }
   .footerContainer footer .footer__top {
     margin: 1vh 0 0 0;
     display: -webkit-box;
